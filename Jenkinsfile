@@ -4,7 +4,7 @@ pipleline{
         stage('Build Docker Image'){
             steps{
                 echo 'Building Docker Image'          
-                bat 'docker build -t kubedemoapp:v1 .'
+                bat 'docker build -t kubedemoapp .'
                 }
         }
         stage('Docker login'){
